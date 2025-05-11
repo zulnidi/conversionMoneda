@@ -12,7 +12,19 @@ Este proyecto es un conversor de monedas desarrollado en Java. Utiliza la API p�
 
 ## Estructura del Proyecto
 
-ConversorMonedas/ │ ├── conversor/ │   ├── Main.java               # Clase principal con menú de usuario │   ├── ApiClient.java          # Clase para consumir la API │   ├── Conversor.java          # Lógica de conversión entre monedas │   ├── MonedaRecord.java       # Estructura de datos con record para respuesta JSON │   └── JsonUtil.java           # Serialización/Deserialización JSON con Gson │ ├── gson-2.10.1.jar             # Librería externa para manejar JSON └── README.md                   # Documentación del proyecto
+ConversorMoneda/
+├── .idea/               # Configuración de IntelliJ IDEA
+├── out/                 # Archivos compilados (generado automáticamente)
+├── src/                 # Código fuente principal
+│   ├── App/             # Clase principal de la aplicación
+│   ├── ConversorApp/    # Lógica de la aplicación conversora
+│   ├── Model/           # Modelos de datos
+│   │   ├── Moneda/      # Definición de monedas
+│   │   └── ResultadoConversion/  # Modelo para resultados de conversión
+│   └── Service/        # Servicios externos
+│       └── ApiService/  # Conexión con API de tasas de cambio
+├── .gitignore          # Archivos excluidos de Git
+└── ConversorMoneda.iml # Archivo de configuración del módulo (IntelliJ)
 
 ## Requisitos
 
